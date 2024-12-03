@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección</title>
+    <script>
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.tuapp.android";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/es/app/ester-cat/id747776884";
+        } else {
+            window.location.href = "https://residuos.cat";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirigiendo...</p>
+</body>
+</html>
